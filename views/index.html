@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL Shortener API</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>
+        URL Shortener MicroService
+      </h1>
+      <h4>FreeCodeCamp Backend Challenge</h4>
+    </header>
+
+    <div>
+      <h2>User stories:</h2>
+      <p>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response. When I visit that shortened URL, it will redirect me to my original link.      
+      </p>  
+
+      <h2>Input Format</h2>
+      <code> https://fcc-url-shortener-api.glitch.me/new/&lt;original_url&gt; </code>
+
+      <h2>Example Input 1 </h2>
+      <code>https://fcc-url-shortener-api.glitch.me/new/https://www.google.com</code>
+
+      <h2>Output</h2>
+      <blockquote>
+        {
+        "original_url" : "https://www.google.com",
+        "short_url" : "https://fcc-url-shortener-api.glitch.me/3004"
+        }
+      </blockquote>
+
+      <h2>Example Input 2</h2>
+      <code> https://fcc-url-shortener-api.glitch.me/new/https://www.twitter.com </code>
+
+      <h2>Output</h2>
+      <blockquote>
+      {
+      "original_url" : "https://www.twitter.com",
+      "short_url" : "https://fcc-url-shortener-api.glitch.me/S16EKNH4M"
+      }
+      </blockquote>
+
+      <h2>Usage:</h2>
+      <p>When you type the shortURL in address bar </p>
+      <code> https://fcc-url-shortener-api.glitch.me/3004 </code>
+
+      <p>It Will get redirected to original URL</p>
+      <code>https://www.google.com</code>
+    </div>
+   
+  </body>
+</html>
